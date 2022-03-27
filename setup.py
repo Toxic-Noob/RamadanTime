@@ -43,7 +43,7 @@ def banner():
         if not ("ramadan --banner" in opn):
             fsh = ""
             if ("fish" in opn):
-                fsh = "fish"
+                fsh = "\nfish"
                 opn = opn.replace("fish", "").replace("&& fish", "").replace("&& fish &&", "").replace("fish &&", "")
             os.system("mv "+home+".bashrc "+home+".bashrctemp  > /dev/null 2>&1")
             if (opn == "") or (opn == " ") or (opn == "\n") or (opn == " \n") or (opn == "\n "):
