@@ -16,8 +16,9 @@ def psb(z):
         time.sleep(0.02)
 
 #PackageSetup
-if not os.path.exists(path+"lib/python3.10/site-packages/ramadan"):
-    os.system("cp -r ramadan "+path+"lib/python3.10/site-packages")
+def package_setup():
+    if not os.path.exists(path+"lib/python3.10/site-packages/ramadan"):
+        os.system("cp -r ramadan "+path+"lib/python3.10/site-packages")
 
 #SetupShortCut
 def shortcut():
@@ -144,10 +145,11 @@ def setup():
     while not (op in ["1", "2", "3", "4", "5", "6", "7", "8", "9", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64"]):
         psb("\n    \033[92m[\033[91m!\033[92m] Please Choose a Correct Option!")
         op = input("\n    \033[92m[\033[37m*\033[92m] Enter Your Choice:> \033[37m")
-        
+    package_setup()
     user_dist = opn[int(op) - 1]
     save_dist(user_dist)
     shortcut()
+    
     psb("\n    \033[92m[\033[37m*\033[92m] District \033[37m"+user_dist.replace("\n", "").title()+" \033[92mSelected Successfully..!!")
     time.sleep(1)
     lb = input("\n    \033[92m[\033[37m*\033[92m] Do You Want To Set Ramadan Time Table as Banner? [y/n]: \033[37m").lower()
@@ -156,7 +158,6 @@ def setup():
         lb = input("\n    \033[92m[\033[37m*\033[92m] Do You Want To Set It as Banner? [y/n]: \033[37m").lower()
     if (lb == "y") or (lb == ""):
         banner()
-    
     psb("\n    \033[92m[\033[37m*\033[92m] Ramadan Settings Setup Successfull!")
     psb("    \033[92m[\033[37m*\033[92m] Type \033[37mramadan\033[92m On Terminal To See Ramadan Time Table!!")
     psb("    \033[92m[\033[37m*\033[92m] Please Make Sure That, You Have an Internet Connection In The Days, \033[37mApril 3 & 4")
