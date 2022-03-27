@@ -10,9 +10,9 @@ from more import *
 columns = shutil.get_terminal_size().columns
 
 try:
-    arg = sys.argv[1]
+    arg = sys.argv[1].lower()
     try:
-        arg2 = sys.argv[2]
+        arg2 = sys.argv[2].lower()
     except:
         arg2 = ""
 except:
@@ -399,6 +399,7 @@ try:
                 dist = input("\n    \033[92m[\033[37m*\033[92m] Enter Your District Name:> \033[37m")
         else:
             dist = dist
+        print("\033[37m")
 
 
     seh_add = main_data[dist]["seheri"]
