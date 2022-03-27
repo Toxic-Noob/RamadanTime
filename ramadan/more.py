@@ -86,7 +86,6 @@ def reset():
                     os.system("rm "+home+".bashrc  > /dev/null 2>&1")
                     os.system("mv "+home+".bashrctemp "+home+".bashrc > /dev/null 2>&1")
                     time.sleep(1)
-            os.system("rm -rf "+path+"lib/python3.10/site-packages/ramadan > /dev/null 2>&1")
             psb("\n    \033[92m[\033[37m*\033[92m] Time Table Settings Reset Successful!\033[37m\n")
             sys.exit()
         else:
