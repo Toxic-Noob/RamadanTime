@@ -151,8 +151,8 @@ def setup(type):
         psb("    \033[92m[\033[37m*\033[92m] Please Make Sure That, You Have an Internet Connection In The Days, \033[37mApril 3 & 4")
         psb("    \033[92m[\033[37m*\033[92m] Close Your Termux and Start Again...\n")
         psb("\033[92m[\033[37m★\033[92m] Ramadan Mobarak! \033[92m[\033[37m★\033[92m]".center(columns + 30))
+        print("\033[37m")
         os.system("python "+path+"lib/python3.10/site-packages/ramadan/main.py")
-        print("\033[37m\n")
         sys.exit()
 
 #Logo
