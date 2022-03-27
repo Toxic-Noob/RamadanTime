@@ -382,8 +382,11 @@ try:
                 setup("")
     else:
         dist = arg2
-        if (dist == ""):
-            psb("\n    \033[92m[\033[91m!\033[92m] You Have Not Entered Any District Name!")
+        if not (dist in main_data):
+            if (dist == ""):
+                psb("\n    \033[92m[\033[91m!\033[92m] You Have Not Entered Any District Name!")
+            else:
+                psb("\n    \033[92m[\033[91m!\033[92m] You Have Entered An Invalid District Name!")
             dist = input("\n    \033[92m[\033[37m*\033[92m] Enter Your District Name:> \033[37m").lower()
             while not (dist in main_data):
                 if (dist == ""):
