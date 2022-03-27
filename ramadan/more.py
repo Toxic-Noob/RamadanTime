@@ -41,11 +41,15 @@ def banner():
     if os.path.exists(home+".bashrc"):
         opn = open(home+".bashrc", "r").read()
         if not ("ramadan --banner" in opn):
+            fsh = ""
+            if ("fish" in opn):
+                fsh = "\nfish"
+                opn = opn.replace("fish", "").replace("&& fish", "").replace("&& fish &&", "").replace("fish &&", "")
             os.system("mv "+home+".bashrc "+home+".bashrctemp  > /dev/null 2>&1")
             if (opn == "") or (opn == " ") or (opn == "\n") or (opn == " \n") or (opn == "\n "):
                 opn = "clear && figlet "+name+" | lolcat\n"
             file = open(home+".bashrc", "w")
-            file.write(opn+"ramadan --banner")
+            file.write(opn+"ramadan --banner"+fsh)
             file.close()
             time.sleep(1)
             psb("\n    \033[92m[\033[37m*\033[92m] Banner Added Successfully..!!")
