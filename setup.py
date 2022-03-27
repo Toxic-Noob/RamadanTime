@@ -52,15 +52,15 @@ def banner():
             file.write(opn+"ramadan --banner"+fsh)
             file.close()
             time.sleep(1)
-            psb("\n    \033[92m[\033[37m*\033[92m] Banner Added Successfully..!!")
+            psb("\n    \033[92m[\033[37m*\033[92m] Banner Added Successfully..!!\033[37m\n")
         else:
-            psb("\n    \033[92m[\033[91m!\033[92m] Banner Is Already Added To Your Termux!")
+            psb("\n    \033[92m[\033[91m!\033[92m] Banner Is Already Added To Your Termux!\033[37m\n")
     else:
         file = open(home+".bashrc", "w")
         file.write("clear && figlet "+name+" | lolcat && ramadan --banner")
         file.close()
         time.sleep(1)
-        psb("\n    \033[92m[\033[37m*\033[92m] Banner Added Successfully..!!")
+        psb("\n    \033[92m[\033[37m*\033[92m] Banner Added Successfully..!!\033[37m\n")
 
 #RemoveBanner
 def remove_banner():
@@ -76,13 +76,13 @@ def remove_banner():
                 os.system("mv "+home+".bashrctemp "+home+".bashrc > /dev/null 2>&1")
                 time.sleep(1)
                 psb("\n    \033[92m[\033[37m*\033[92m] Banner Removed Successfully!")
-                psb("    \033[92m[\033[37m*\033[92m] Please Close Your Termux and Reopen It!")
+                psb("    \033[92m[\033[37m*\033[92m] Please Close Your Termux and Reopen It!\033[37m\n")
             else:
-                psb("\n    \033[92m[\033[37m*\033[92m] Banner Remove Process Canceled!")
+                psb("\n    \033[92m[\033[37m*\033[92m] Banner Remove Process Canceled!\033[37m\n")
         else:
-            psb("\n    \033[92m[\033[91m!\033[92m] You Have not Added Ramadan Time Table Banner Yet!!")
+            psb("\n    \033[92m[\033[91m!\033[92m] You Have not Added Ramadan Time Table Banner Yet!!\033[37m\n")
     else:
-        psb("\n    \033[92m[\033[91m!\033[92m] You Have not Added Ramadan Time Table Banner Yet!!")
+        psb("\n    \033[92m[\033[91m!\033[92m] You Have not Added Ramadan Time Table Banner Yet!!\033[37m\n")
 
 #ResetRamadanTimeSettings
 def reset():
