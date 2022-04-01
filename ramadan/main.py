@@ -78,7 +78,7 @@ def remain_sehri(data):
         new_min = str(temp_min - pre_min)
         new_hour = str(int(new_hour) + 1)
     if (len(new_hour) == 1):
-        new_hour = "0" + str(int(new_hour) - 1)
+        new_hour = "0" + str(int(new_hour) - 1).replace("-", "")
     if (pre_hour == 5):
         new_hour = "23"
     if (len(new_min) == 1):
@@ -86,6 +86,12 @@ def remain_sehri(data):
     if (int(month) == 5) and (int(day) == 2) and (pre_hour > 5):
         new_hour = "--"
         new_min = "--"
+    if (str(temp_min) == "0"):
+        new_min = str(60 - pre_min)
+        if (len(str(new_min)) == 1):
+            new_min = "0"+new_min
+        if (new_min == "60"):
+            new_min = "00"
     return new_hour, new_min
 
 #Iftar
@@ -126,9 +132,15 @@ def sehri_get(main_data, add_data):
         data = minus_data(main_data, add_data, hour)
     else:
         if (int(main_data) > 55):
-            data = "3:"+main_data
+            data = "3:"+str(main_data)
+            if (len(str(main_data)) == 1):
+                data = "3:0"+str(main_data)
         else:
-            data = "4:"+main_data
+            data = "4:"+str(main_data)
+            if (len(str(main_data)) == 1):
+                data = "4:0"+str(main_data)
+    if (int(data.split(":")[1]) > 55):
+        data = "3:" + str(data.split(":")[1])
     return data
 
 #GetIftarTime
