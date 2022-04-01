@@ -78,9 +78,14 @@ def remain_sehri(data):
         new_min = str(temp_min - pre_min)
         new_hour = str(int(new_hour) + 1)
     if (len(new_hour) == 1):
-        new_hour = "0" + new_hour
+        new_hour = "0" + str(int(new_hour) - 1)
+    if (pre_hour == 5):
+        new_hour = "23"
     if (len(new_min) == 1):
         new_min = "0" + new_min
+    if (int(month) == 5) and (int(day) == 2) and (pre_hour > 5):
+        new_hour = "--"
+        new_min = "--"
     return new_hour, new_min
 
 #Iftar
@@ -103,7 +108,7 @@ def remain_iftar(data):
         new_min = str(temp_min - pre_min)
         new_hour = str(int(new_hour) + 1)
     if (len(new_hour) == 1):
-        new_hour = "0" + new_hour
+        new_hour = "0" + str(int(new_hour) - 1)
     if (len(new_min) == 1):
         new_min = "0" + new_min
     return new_hour, new_min
@@ -266,7 +271,8 @@ def print_data(sehri, iftar, no):
     
     temp_seh = remain_sehri(sehri)
     temp_iftar = remain_iftar(iftar)
-    
+    if (int(month) == 5) and (int(day) == 2) and (int(hour) > 5):
+        sehri = "-:--"
     
     print_dist = "\033[95m District : \033[37m"+dist.title()
     
@@ -397,7 +403,10 @@ try:
         else:
             dist = dist
         print("\033[37m")
-
+    
+    if (int(month) == 4) and (int(day) == 2):
+        coming_soon()
+        sys.exit()
 
     seh_add = main_data[dist]["seheri"]
     ift_add = main_data[dist]["iftar"]
@@ -405,7 +414,10 @@ try:
     roja_no = time_data[day]["no"]
     seh_main = int(time_data[day]["seheri"])
     if (int(hour) > 5):
-        seh_main = str(time_data[str(int(day) + 1)]["seheri"])
+        try:
+            seh_main = str(time_data[str(int(day) + 1)]["seheri"])
+        except:
+            seh_main = str(time_data[str(1)]["seheri"])
     ift_main = time_data[day]["iftar"]
 
     sehri_got = sehri_get(seh_main, seh_add)
@@ -420,6 +432,14 @@ try:
     is_ok = open(".approval", "r").read().replace("\n", "")
     if (int(month) > 4) and (int(day) >= 2) and (int(hour) > 18):
         remove_banner()
+        coming_soon()
+        os.system("rm .approval > /dev/null 2>&1")
+        sys.exit()
+    elif (int(month) > 4) and (int(day) > 2):
+        remove_banner()
+        coming_soon()
+        os.system("rm .approval > /dev/null 2>&1")
+        sys.exit()
 except FileNotFoundError:
     if (int(month) > 4) and (int(day) >= 2):
         try:
