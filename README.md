@@ -54,7 +54,7 @@ If You Find Any Kind Of Bug or Error, Please Contact ToxicNoob As Soon as Possib
 ## Contact:
 <li> Contact ToxicNoob Via <a href="https://www.facebook.com/ToxicNoobOfficial">Facebook Page</a>
 <li> Or You Can Mail Via:
-toxicnoob.sl4d3.official@gmail.com
+ContactWithToxicNoob@gmail.com
 
 ## Tool Screenshots:
 <img src="https://b.top4top.io/p_2278hndx60.jpg" alt="Ramadan-Time">
