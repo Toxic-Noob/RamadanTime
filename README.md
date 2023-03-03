@@ -1,6 +1,8 @@
 ![RamadanTime](https://g.top4top.io/p_261883all5.jpg)
 <p align="center">Ramadan Time Table viewer for Bangladeshi Termux users</p>
 
+#### Install Tool Any Time!
+
 ### Version 2.0 Updates:
 * Coded from Scratch
 * Made Light weight
