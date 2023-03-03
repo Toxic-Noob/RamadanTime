@@ -1,0 +1,131 @@
+{
+  "Bagerhat": {
+    "sehri": "+5", "iftar": "+1"
+  }, "Bandarban": {
+    "sehri":"-4","iftar":"-10"
+  }, "Barguna": {
+    "sehri": "+5", "iftar": "+6"
+  }, "Barishal": {
+    "sehri": "+2", "iftar": "-2"
+  }, "Bhola": {
+    "sehri": "+2", "iftar": "-3"
+  }, "Bogura": {
+    "sehri": "+1", "iftar": "+2"
+  }, "Brahmanbaria": {
+    "sehri": "-4", "iftar": "-3"
+  }, "Chandpur": {
+    "sehri": "+0", "iftar": "-2"
+  }, "Chapaiawabganj": {
+    "sehri": "+6", "iftar": "+10"
+  }, "Chattogram": {
+    "sehri": "-2", "iftar": "-8"
+  }, "Chuadanga": {
+    "sehri": "+6", "iftar": "+6"
+  }, "Cox's Bazar": {
+    "sehri": "-1", "iftar": "-10"
+  }, "Cumilla": {
+    "sehri": "-3", "iftar": "-4"
+  }, "Dhaka": {
+    "sehri": "+0", "iftar": "+0"
+  }, "Dinajpur": {
+    "sehri": "+2", "iftar": "+10"
+  }, "Faridpur": {
+    "sehri": "+2", "iftar": "+2"
+  }, "Feni": {
+    "sehri": "-3", "iftar": "-5"
+  }, "Gaibandha": {
+    "sehri": "-1", "iftar": "+6"
+  }, "Gazipur": {
+    "sehri": "-1", "iftar": "+0"
+  }, "Gopalganj": {
+    "sehri": "+4", "iftar": "+1"
+  }, "Habiganj": {
+    "sehri": "-6", "iftar": "-3"
+  }, "Jamalpur": {
+    "sehri": "-2", "iftar": "+3"
+  }, "Jashore": {
+    "sehri": "+6", "iftar": "+4"
+  }, "Jhalokati": {
+    "sehri": "+3", "iftar": "-1"
+  }, "Jhenaidah": {
+    "sehri": "+5", "iftar": "+5"
+  }, "Joypurhat": {
+    "sehri": "+2", "iftar": "+8"
+  }, "Khagrachari": {
+    "sehri": "-6", "iftar": "-8"
+  }, "Khulna": {
+    "sehri": "+6", "iftar": "+2"
+  }, "Kishoreganj": {
+    "sehri": "-3", "iftar": "-1"
+  }, "Kurigram": {
+    "sehri": "-2", "iftar": "+8"
+  }, "Kushtia": {
+    "sehri": "+5", "iftar": "+5"
+  }, "Lakshmipur": {
+    "sehri": "-1", "iftar": "-3"
+  }, "Lalmonirhat": {
+    "sehri": "-2", "iftar": "+8"
+  }, "Madaripur": {
+    "sehri": "+2", "iftar": "+0"
+  }, "Magura": {
+    "sehri": "+4", "iftar": "+3"
+  }, "Manikganj": {
+    "sehri": "+1", "iftar": "+2"
+  }, "Maulvibazar": {
+    "sehri": "-8", "iftar": "-4"
+  }, "Meherpur": {
+    "sehri": "+7", "iftar": "+6"
+  }, "Munshiganj": {
+    "sehri": "+0", "iftar": "-1"
+  }, "Mymensingh": {
+    "sehri": "-3", "iftar": "+1"
+  }, "Naogaon": {
+    "sehri": "+3", "iftar": "+8"
+  }, "Narail": {
+    "sehri": "+5", "iftar": "+2"
+  }, "Narayanganj": {
+    "sehri": "+0", "iftar": "-1"
+  }, "Narsingdi": {
+    "sehri": "-2", "iftar": "-1"
+  }, "Natore": {
+    "sehri": "+4", "iftar": "+8"
+  }, "Netrokona": {
+    "sehri": "-4", "iftar": "+0"
+  }, "Nilphamari": {
+    "sehri": "+1", "iftar": "+10"
+  }, "Noakhali": {
+    "sehri": "-1", "iftar": "-4"
+  }, "Pabna": {
+    "sehri": "+4", "iftar": "+5"
+  }, "Panchagarh": {
+    "sehri": "+1", "iftar": "+12"
+  }, "Patuakhali": {
+    "sehri": "+4", "iftar": "-2"
+  }, "Pirojpur": {
+    "sehri": "+6", "iftar": "+0"
+  }, "Rajbari": {
+    "sehri": "+4", "iftar": "+4"
+  }, "Rajshahi": {
+    "sehri": "+5", "iftar": "+8"
+  }, "Rangamati": {
+    "sehri": "-4", "iftar": "-9"
+  }, "Rangpur": {
+    "sehri": "-1", "iftar": "+8"
+  }, "Satkhira": {
+    "sehri": "+7", "iftar": "+4"
+  }, "Shariatpur": {
+    "sehri": "+2", "iftar": "-1"
+  }, "Sherpur": {
+    "sehri": "-2", "iftar": "+3"
+  }, "Sirajgonj": {
+    "sehri": "+1", "iftar": "+4"
+  }, "Sunamganj": {
+    "sehri": "-8", "iftar": "-2"
+  }, "Sylhet": {
+    "sehri": "-9", "iftar": "-4"
+  }, "Tangail": {
+    "sehri": "+0", "iftar": "+2"
+  }, "Thakurgaon": {
+    "sehri": "+2", "iftar": "+12"
+  }
+}
