@@ -1,4 +1,11 @@
-# Ramadan Time 2.0
+"""
+Description:
+    Name: RamadanTime
+    Tool: Show current date Ramadan Sehri & Iftar Time
+    Author: ToxicNoob Inc.
+    GitHub: https://github.com/Toxic-Noob
+    Version: 2.0
+"""
 
 import os, sys, time, json, shutil
 from datetime import datetime
