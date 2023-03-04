@@ -36,7 +36,7 @@ python setup.py
 ```
 
 ### Uses:
-* To show Current Date Time, type
+* To show Current Ramadan Sehri Iftar Time, type
 ```
 ramadan
 ```
@@ -50,8 +50,8 @@ ramadan --reset
 ```
 
 ### Screenshots:
-![RamadanTime](https://k.top4top.io/p_261855ece4.jpg)
-![RamadanTime](https://l.top4top.io/p_26188qzy36.jpg)
+![RamadanTime](https://h.top4top.io/p_2619jz29e5.jpg)
+![RamadanTime](https://k.top4top.io/p_2619qkxw25.jpg)
 
 ### Visitors :
 ![Visitor Count](https://profile-counter.glitch.me/Toxic-Noob/count.svg)
