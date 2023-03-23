@@ -479,7 +479,7 @@ def showTimeData(data):
     
     print(formatText(f"\033[95mIftar: \033[37m{timeHour}:{timeMinute} PM │ \033[95mWait: \033[37m{leftHour} \033[95mHours & \033[37m{leftMinute} \033[95m" + ("Min" if (columns < 50) else "Minutes"))) # Print Iftar Time
     print("\033[94m│\033[93m" + ("-" * (columns-2)) + "\033[94m│") # Border
-    print(formatText(f"\033[95m{dailyQuote.get('quote')} \033[93m- \033[37m{dailyQuote.get('source')}", True)) # Show a Daily Quote
+    print(formatText(f"\033[95m{dailyQuote.get('quote')} \033[93m-\033[37m {dailyQuote.get('source')}", True)) # Show a Daily Quote
     
      # Print Down Border
     print("\033[94m└", end="")
